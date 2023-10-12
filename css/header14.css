@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Lato:wght@300;400;700;900&family=Poppins:wght@100;200;300;500&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+}
+.page{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2F1893;
+}
+nav{
+    height: 80px;
+    color:white;
+    width: 71%;
+    margin:auto;
+    padding: 0% 2%;
+}
+.logo{
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    /* margin-right: 100px; */
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-size: 17px;
+    padding:0px 8px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+.page-content{
+    margin-top: 5%;
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color:white;
+}
+.left,.right{
+    flex:1;
+    min-width: 260px;
+    margin-bottom:5%;
+    padding: 2%;
+}
+.left{
+    margin-right: 10%;
+}
+.right{
+    margin-left: 5%;
+    text-align: center;
+    /* background-color: rgb(135, 88, 88); */
+    padding: 2%;
+}
+.right .form{
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+.heading-main h2{
+    font-size:3.5rem;
+    font-weight: 700;
+}
+.page-desc h5{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 32px;
+    width: 85%;
+    margin: 15px 0px;
+}
+.learn-btn{
+    background-color: #E93A7D;
+    padding: 10px 20px;
+    color:white;
+    font-size: 1em;
+    border-radius: 100px;
+    box-shadow: none;
+    border: none;
+}
+.form-heading h3{
+    color:#1E0E62;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin:1%;
+    margin-top: 5%;
+}
+.input{
+    border:2px solid #EBEAED;
+    padding: 10px 15px;
+    border-radius: 100px;
+    margin: 6% 4%;
+    width: 80%;
+}
+input[type="text"],input[type="submit"]{
+    border:none;
+    width: 100%;
+    background: none;
+}
+input[type="text"]:focus{
+    outline:none;
+}
+input[type="text"]::placeholder {
+    color:#a49bbb;
+    font-weight: 510;
+}
+.terms{
+    display: flex;
+    margin: auto;
+    color:#a49bbb;
+}
+.check-terms input[type="checkbox"]{
+    margin:0px 10px 0px 30px;
+    padding: 20px;
+}
+.check-terms input[type="checkbox"]:checked{
+    background-color: #000000;
+    color:#1E0E62;
+}
+
+.terms-agree{
+    color:#a49bbb;
+}
+.submit-btn{
+    background: #482BE7;
+    margin: 4% 6%;
+    font-weight: 600;
+}
+.submit-btn input{
+    color:white;
+}
+.twitter{
+    background-color: #1DA1F2;
+}
+.signin-text{
+    color:#a49bbb;
+    margin-bottom: 10%;
+}
+.signin-btn{
+    color:#25DAC5;
+}
+.line {
+    border-top: 0.1px solid #EBEAED;
+    flex: 1; 
+    color:#EBEAED;
+}
+.line hr{
+    color:#EBEAED
+}
+.or {
+    padding: 0 10px;
+    color:#a49bbb;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+@media (max-width:1300px){
+    .page-content{
+        width: 75%;
+        /* background-color: #a49bbb; */
+    }
+}
+@media (max-width:1100px){
+    nav{
+        width: 82%;
+    }
+    .page-content{
+        width: 85%;
+    }
+    .left{
+        margin-right: 2%;
+    }
+    .right{
+        margin-left: 2%;
+    }
+}
+@media (max-width:900px){
+    .page-content{
+        width: 90%;
+    }
+}
+@media (max-width: 933px){
+    .page-content{
+        flex-direction: column;
+    }
+    .left,.right{
+        width: 50%;
+    }
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      color: #2F1893;
+      font-size: 20px;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  @media (max-width: 933px){
+    .left,.right{
+        width: 90%;
+    }
+  }
